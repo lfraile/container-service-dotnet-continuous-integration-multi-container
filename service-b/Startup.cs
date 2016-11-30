@@ -41,7 +41,7 @@ namespace ServiceB
             app.ApplicationServices.GetService<TelemetryClient>().Context.Properties["Service name"] = "service-b";
             app.Run(async context =>
             {
-                await context.Response.WriteAsync("Hello from service B.1 running on " + Environment.MachineName);
+                await context.Response.WriteAsync("Hello from service B.2 running on " + Environment.MachineName);
             });
         }
     }
